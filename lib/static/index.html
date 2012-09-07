@@ -6,7 +6,7 @@
 <script type="text/javascript">
 window.onload = function(){
 	
-	var socket = io.connect('http://localhost');
+	window.socket = io.connect('http://localhost');
 
 	var T = THREE;
 	var camera, scene, renderer;
