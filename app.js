@@ -18,11 +18,10 @@
 		});
 	});
 	
-	var sockets = io.listen(app).sockets;
-
-	sockets.on('connection', function (socket) {
-		hub.receive(socket);
-	});
+	io.listen(app)
+		.sockets.on('connection', function (socket) {
+			hub.receive(socket);
+		});
 
 	app.listen(80);
 
