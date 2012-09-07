@@ -1,0 +1,13 @@
+{
+	"name": "cloneydong",
+	"description": "Wouldn't you like to know?",
+	
+	"version": "0.1.0",
+	"main": "app.js",
+
+	"dependencies":{
+		"underscore": "*",
+		"socket.io": "*",
+		"eventemitter2": "*"
+	}
+}
