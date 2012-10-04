@@ -8,7 +8,10 @@
 	"dependencies":{
 		"underscore": "*",
 		"socket.io": "*",
-		"eventemitter2": "*",
-		"vows":"*"
+		"eventemitter2": "*"
+	},
+	"devDependencies":{
+		"vows":"*",
+		"sinon":"*"
 	}
 }
