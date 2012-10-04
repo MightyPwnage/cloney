@@ -4,7 +4,7 @@
 	var io = require('socket.io');
 	var fs = require('fs');	
 
-	var hub = require('./lib/socketHub.js');
+	var gameManager = require('./lib/socketHub.js');
 
 	var app = http.createServer(function handler (req, res) {
 		fs.readFile('./lib/static/index.html', function (err, data) {
