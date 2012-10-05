@@ -12,7 +12,7 @@ Install the dependencies.
 Install vows globally (if you want easy).
 > npm install -g vows
 
-or if you like your UAC *snicker*:
+or if you like your UAC (snicker):
 > sudo npm install -g vows
 
 
