@@ -1,33 +1,34 @@
 Cloney
 ======
-
 Cloney is a super secret project that only cool people get to know about.
 
 Install
 -------
 
 Install the dependencies.
-> npm install 
+$ npm install 
 
-Install vows globally (if you want easy).
-> npm install -g vows
+vows test framework needed to run the tests.
 
-or if you like your UAC (snicker):
-> sudo npm install -g vows
+Install vows test framework:
+$ npm install vows
 
+Or install globally if you value convenience and testing:
+# npm install -g vows
 
 
 Debug Console
 -------------
-
 Coming next~!
+
+
+
 
 Run Tests
 ---------
+Run tests in one of two ways depending on how you installed vows:
+$ find test -name *-test.js -exec node {} \;
 
-> vows
-
-Or, if you opted for non-easy
-
-> find test -name *-test.js | xargs -L 1 node
+Or if you value convenienc:
+$ vows
 
