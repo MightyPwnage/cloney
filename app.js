@@ -24,10 +24,9 @@
 		});
 
 	app.listen((function () {
-            if(process.argv[2]===undefined) {
-                return 80;
-            }
-            return parseInt(process.argv[2], 10);
+		if(process.argv[2]===undefined) {
+			return 80;
+		}
+		return parseInt(process.argv[2], 10);
         })());
-
 })();
