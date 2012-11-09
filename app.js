@@ -23,6 +23,11 @@
 			hub.receive(socket);
 		});
 
-	app.listen(80);
+	app.listen((function () {
+            if(process.argv[2]===undefined) {
+                return 80;
+            }
+            return parseInt(process.argv[2], 10);
+        })());
 
 })();
