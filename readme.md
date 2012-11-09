@@ -33,7 +33,7 @@ Run tests in one of two ways depending on how you installed vows:
 
  $ find test -name *-test.js -exec node {} \;
 
-Or if you value convenienc:
+Or if you value convenience:
 
  $ vows
 
