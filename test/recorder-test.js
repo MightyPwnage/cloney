@@ -2,7 +2,7 @@ var _ = require('underscore');
 var vows = require('vows');
 var assert = require('assert');
 
-var recorder = require('../lib/recorder.js');
+var recorder = require('../lib/recorder.js').recorder;
 var EventEmitter2 = require("eventemitter2").EventEmitter2;
 
 vows.describe('recorder').addBatch({

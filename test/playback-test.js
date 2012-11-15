@@ -5,7 +5,8 @@ var sinon = require('sinon');
 var _ = require('underscore');
 var EventEmitter2 = require("eventemitter2").EventEmitter2;
 
-var playback = require('../lib/playback.js');
+var playback = require('../lib/playback.js').playback;
+console.log(playback);
 
 vows.describe('playback').addBatch({
 
