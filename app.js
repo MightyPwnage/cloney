@@ -3,11 +3,10 @@
 	var io = require('socket.io');
 	var fs = require('fs');	
 
-	var gameManager = require('./lib/socketHub.js');
-
 	var app = http.createServer(function handler (req, res) {
 		fs.readFile('./lib/static/index.html', function (err, data) {
 			if (err) {
+				console.log(err);
 				res.writeHead(500);
 				return res.end('Error loading index.html');
 			}
@@ -19,7 +18,7 @@
 	
 	io.listen(app)
 		.sockets.on('connection', function (socket) {
-			hub.receive(socket);
+			console.log("noop. TODO: intercept the socket to spawn games.")
 		});
 
 	app.listen((function () {
@@ -27,5 +26,6 @@
 			return 80;
 		}
 		return parseInt(process.argv[2], 10);
-        })());
+	})());
+
 })();
