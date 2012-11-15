@@ -21,11 +21,5 @@
 			console.log("noop. TODO: intercept the socket to spawn games.")
 		});
 
-	app.listen((function () {
-		if(process.argv[2]===undefined) {
-			return 80;
-		}
-		return parseInt(process.argv[2], 10);
-	})());
-
+	app.listen(process.argv[2] || 80);
 })();
