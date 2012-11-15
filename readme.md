@@ -7,17 +7,17 @@ Install
 
 Install the dependencies.
 
- $ npm install 
+	$ npm install 
 
 vows test framework needed to run the tests.
 
 Install vows test framework:
 
- $ npm install vows
+	$ npm install vows
 
 Or install globally if you value convenience and testing:
 
- # npm install -g vows
+	\# npm install -g vows
 
 
 Debug Console
@@ -31,9 +31,9 @@ Run Tests
 ---------
 Run tests in one of two ways depending on how you installed vows:
 
- $ find test -name *-test.js -exec node {} \;
+	$ find test -name *-test.js -exec node {} \;
 
 Or if you value convenience:
 
- $ vows
+	$ vows
 
