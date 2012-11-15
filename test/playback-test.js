@@ -42,11 +42,11 @@ vows.describe('playback').addBatch({
 			}, 10);
 		},
 		'consumes cycle report': function(err, topic){
-			var a = topic.debug.showEvents();
+			var a = topic.debug.events();
 			assert.equal(a[0][0].test, 1);
 		},
 		'merges cycle reports correctly':function(err, topic){
-			var a = topic.debug.showEvents();
+			var a = topic.debug.events();
 			assert.lengthOf(a[0], 2);
 			assert.equal(a[0][1].test2, 1);
 			assert.equal(a[1][0].test3, 2);
