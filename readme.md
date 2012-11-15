@@ -17,7 +17,7 @@ Install vows test framework:
 
 Or install globally if you value convenience and testing:
 
-	\# npm install -g vows
+	# npm install -g vows
 
 
 Debug Console
